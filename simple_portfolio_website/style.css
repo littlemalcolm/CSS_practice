@@ -267,29 +267,3 @@
     cursor: pointer;
     margin: 0 1rem 0 0;
 }
-
-.staff-database {
-    color: #fff;
-    font-family: inherit;
-    width: 100%;
-    cursor: pointer;
-}
-
-table, table td, table th {
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
-  table tr:nth-child(even){background-color: #333;}
-
-table tr:hover {background-color: rebeccapurple;}
-
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: rgb(209, 206, 206);
-  color: #000;
-  border: 1.5px solid #858585;
-}

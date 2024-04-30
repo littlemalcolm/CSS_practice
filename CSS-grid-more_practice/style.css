@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..700;1,400..700&display=swap');
 
 * {
   margin: 0;
@@ -7,15 +7,79 @@
 }
 
 body {
-  font-family: "Lora", sans-serif;
-  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
 
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-auto-rows: 50px auto 50px;
+  grid-template-columns: repeat(18, 0.5fr);
+  grid-auto-rows: 55px auto 40px;
   grid-template-areas:
-    "hd hd hd hd hd hd hd hd hd"
-    "mn mn mn mn mn mn mn sb sb"
-    "ft ft ft ft ft ft ft ft ft";
-  gap: 0.5rem;
+    "hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd"
+    "as as as mn mn mn mn mn mn mn mn mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+header {
+    grid-area: hd;
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0.5rem 0 0 1rem;
+}
+
+aside {
+    grid-area: as;
+    background-color: #5656fb;
+    color: #fff;
+}
+
+aside p {
+    margin: 1rem 0 1rem 1rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+main {
+    grid-area: mn;
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 280px;
+    height: 230px;
+    font-size: 13px;
+    padding: 1rem;
+    margin: 1.5rem 0 0 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px #cecdcd;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 235, 249);
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: 500;
 }
